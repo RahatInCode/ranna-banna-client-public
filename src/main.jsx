@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch('https://ranna-banna-server-7kse1solg-ahmedrahat9901-gmailcoms-projects.vercel.app/recipes'),
+        loader: () => fetch(`https://ranna-banna-server-7kse1solg-ahmedrahat9901-gmailcoms-projects.vercel.app/recipes`),
         
         Component:Home,
       },
