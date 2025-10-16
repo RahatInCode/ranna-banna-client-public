@@ -16,6 +16,7 @@ import Register from './Pages/Register';
 import PrivateRoute from './Components/PrivateRoutes';
 import RecipeDetails from './Pages/RecipeDetails';
 import AuthProvider from './contexts/AuthProvider';
+import ErrorPage from './Components/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -62,8 +63,13 @@ path: "RecipeDetails/:id",
   },
   {
     path: "*",
-    element: <Blogs />,
+    element: <ErrorPage />,
   },
+  {    path: "Blogs",
+    element: <Blogs />,
+  }
+
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
